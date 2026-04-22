@@ -1,6 +1,7 @@
 # Solar-Sunflower-Tracking-System
 Project Description :-
 A Solar panel that rotates with the help of servo motor fixed to an axis such that it moves and aligns with maximum light intensity using ldr sensors and Arduino.
+
 Components Used :-
   1.Arduino
   2.Bread board
@@ -8,6 +9,7 @@ Components Used :-
   4.Solar panel (small)
   5.Micro servo motor
   6.Connecting wires
+  
 Working Principle :-
 Two LDR sensors are attached along the fixed axis of the panel, placed parallel to each other. The Arduino receives the sensor values and compares the difference between them. Based on a set threshold, the Arduino sends a signal to the servo motor.
 
