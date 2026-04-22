@@ -1,24 +1,42 @@
-# Solar-Sunflower-Tracking-System
-Project Description :-
+# Solar Sunflower Tracking System 🌻
 
-A Solar panel that rotates with the help of servo motor fixed to an axis such that it moves and aligns with maximum light intensity using ldr sensors and Arduino.
+## Project Description
 
-Components Used :-
+This project is an automatic solar tracking system in which a solar panel rotates using a servo motor to align with the direction of maximum light intensity. The system uses LDR sensors and an Arduino to continuously adjust the panel position.
 
-  1.Arduino
-  2.Bread board
-  3.LDR sensors(Analog Type)
-  4.Solar panel (small)
-  5.Micro servo motor
-  6.Connecting wires
-  
-Working Principle :-
+---
 
-Two LDR sensors are attached along the fixed axis of the panel, placed parallel to each other. The Arduino receives the sensor values and compares the difference between them. Based on a set threshold, the Arduino sends a signal to the servo motor.
+## Components Used
 
-The servo motor then rotates accordingly. Since the solar panel is mounted on the servo motor, the panel also rotates and aligns towards the direction of maximum light, giving better output.
+- Arduino  
+- Breadboard  
+- LDR Sensors (Analog)  
+- Small Solar Panel  
+- Micro Servo Motor  
+- Connecting Wires  
 
-project demo:-
+---
+
+## Working Principle
+
+Two LDR sensors are placed parallel to each other along the axis of the solar panel. These sensors detect the intensity of light falling on them.
+
+The Arduino reads the sensor values and compares the difference between them. Based on a predefined threshold, it determines the direction of higher light intensity and sends a control signal to the servo motor.
+
+The servo motor rotates accordingly, and since the solar panel is mounted on it, the panel aligns itself towards the direction of maximum light. This forms a basic closed-loop control system that continuously adjusts the panel orientation.
+
+---
+
+## project demo:-
+
 https://drive.google.com/file/d/1kiY7gXZi8LBy6RqSe1vzTXFASPUnZCXr/view?usp=drivesdk
 
 https://drive.google.com/file/d/1Lgf4bdTdiG7e9MzXpNGoTguxIHGnfUav/view?usp=drivesdk
+
+---
+
+## Future Improvements:-
+
+- Upgrade to an ESP32 microcontroller for wi-fi module 
+- Develop a web interface to display and analyze system output  
+- Extend the system to dual-axis tracking for improved efficiency  
